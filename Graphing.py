@@ -6,7 +6,7 @@ llm_df = pd.read_csv('Results/LLM_Implementation.csv')
 
 full_df = pd.merge(traditional_df, llm_df, on='Statistic', how='outer', suffixes=('_Traditional', '_LLM'))
 
-full_df.to_csv('Results/Full_Implementation.csv', index=False)
+
 
 rawmean = full_df.loc[full_df['Statistic'] == 'Mean', 'Non-Private'].values[0]
 rawmedian = full_df.loc[full_df['Statistic'] == 'Median', 'Non-Private'].values[0]
@@ -47,6 +47,9 @@ llmavgtwentyfifth = full_df.loc[full_df['Statistic'] == '25th Percentile', 'Aver
 llmavgseventyfifth = full_df.loc[full_df['Statistic'] == '75th Percentile', 'Average_LLM_Private'].values[0]
 llmavgmin = full_df.loc[full_df['Statistic'] == 'Minimum', 'Average_LLM_Private'].values[0]
 llmavgmax = full_df.loc[full_df['Statistic'] == 'Maximum', 'Average_LLM_Private'].values[0]
+
+full_df = full_df.round(3)
+full_df.to_csv('Results/Full_Implementation.csv', index=False)
 
 thestats = [
     {
@@ -104,6 +107,8 @@ thestats = [
     }
 
 ]
+
+
 
 fix, ax = plt.subplots(figsize=(10, 6))
 

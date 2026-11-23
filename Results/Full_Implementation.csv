@@ -1,0 +1,8 @@
+Statistic,Non-Private,Private_Traditional,Average_Private_Traditional,LLM_Private,Average_LLM_Private
+25th Percentile,7.896,7.896,7.82,7.899,7.833
+75th Percentile,31.275,30.835,30.837,31.121,30.752
+Maximum,512.329,165.683,170.458,580.888,489.601
+Mean,33.276,35.964,32.871,33.731,32.881
+Median,14.454,14.473,14.259,13.928,14.147
+Minimum,0.0,7.092,6.74,4.724,2.673
+STD,51.744,64.286,50.358,53.845,51.435

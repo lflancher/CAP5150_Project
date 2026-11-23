@@ -235,5 +235,3 @@ if __name__ == "__main__":
         f.write(f"75th Percentile,{privateseventyfifth},{avgseventyfifth}\n")
         f.write(f"Minimum,{privatemin},{avgmin}\n")
         f.write(f"Maximum,{privatemax},{avgmax}\n")
-
-    
