@@ -113,4 +113,3 @@ with open("Results/Traditional_Implementation.csv", "w") as f:
     f.write(f"75th Percentile,{seventy_fifth_percentile_fare()},{privseventyfifth},{avgseventyfifth}\n")
     f.write(f"Minimum,{min_fare()},{privmin},{avgmintotal}\n")
     f.write(f"Maximum,{max_fare()},{privmax},{avgmaxtotal}\n")
-
